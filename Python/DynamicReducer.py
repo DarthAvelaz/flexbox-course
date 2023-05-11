@@ -15,3 +15,15 @@ def dynamic_reducer(collection, op):
         "*": operator.mul,
         "/": operator.truediv,
     }
+
+    return reduce((lambda total, element:
+                   operators[op](total, element)), collection)
+
+# total = flexible_counter([1,2,3], '/') #
+0.1666666666666
+
+print(dynamic_reducer([1,2,3], '+'))
+print(dynamic_reducer([1,2,3], '-'))
+print(dynamic_reducer([1,2,3], '*'))
+print(dynamic_reducer([1,2,3], '/'))
+#print (total)
