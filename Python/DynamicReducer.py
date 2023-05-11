@@ -27,3 +27,12 @@ print(dynamic_reducer([1,2,3], '-'))
 print(dynamic_reducer([1,2,3], '*'))
 print(dynamic_reducer([1,2,3], '/'))
 #print (total)
+
+
+first_name = 'Antonio'
+last_name = 'Velazquez'
+
+def function(first_name, last_name):
+    greeting = f'first_name, last_name'
+
+    return greeting
