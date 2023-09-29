@@ -1,0 +1,21 @@
+db.createUser({
+    user: 'Antonio'
+    pwd: 'E08oLHzvC@'
+    customData: {startDate: new Date()},
+    roles: [
+        { role: 'clusterAdmin', db:'admin' },
+        { role: 'readyAnyDatabase', db: 'admin' },
+        'readWrite'
+    ]
+})
+
+# Copy and Paste into Mongo shell and run to create user.
+
+
+db.getUsers()
+
+#running above line brings back all users on the current database.
+
+db.dropUser(name)
+
+#above line deletes named user in paranthases from database user list.

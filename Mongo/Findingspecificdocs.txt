@@ -1,0 +1,7 @@
+db.books.find({ name: "The War of Art"}).pretty()
+
+# Will find the spcifically named item in the collection (in above example code "The Art of War" will be returned from the "Books" collection)
+Multiple items may be returned if named the same, likewise using the _id will bring back the specific item with the _id # in the collection.
+
+SQL equivalent = SELECT * from books WHERE name = "OOP Programming"
+#above will perform much the same process and desired effect in a SQL database as opposed to Mongo db.

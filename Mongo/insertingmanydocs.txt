@@ -1,0 +1,16 @@
+# insert many function for Mongo
+
+db.books.insertMany
+
+db.books.insertMany( [ 
+    {
+        "name": "Confident Ruby",
+        "publishedDate": new Date(),
+        "authors": [
+            { "name": "Avdi Grimm" }
+        ]
+    }
+])
+
+
+# Many documents return a different return value. Mongo will acknowledge : True, then give document ID's for the added documents.

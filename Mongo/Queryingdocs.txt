@@ -1,0 +1,7 @@
+# using the find() function in Mongo to query documents in the database. Several methods and SQL equivalent syntax
+
+db..books.find() #returns all docs inside of collection 'books' in the db
+
+db.books.find().pretty()
+
+#above returns a "pretty" list of docs in "books" collection with IDs for the docs

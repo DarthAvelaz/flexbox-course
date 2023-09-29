@@ -1,0 +1,18 @@
+# syntax for adding documents to created collections on the db
+
+db."collectionname".insert("documentname)
+
+#example:
+
+db.books.insert({
+    "name": "OOP Programming",
+    "publishedDate": new Date(),
+    "authors": [
+        { "name": "Jon Snow" },
+        { "name": "Ned Stark" }
+    ]
+})
+
+# Will return above information in document on screen witha write result confirmation of "WriteResult({ "nInserted" : 1 })" for success
+
+#Video has imporatnt warning about utilizing Mongo properly and using proper naming schemes as Mongo itself does not care what you put in it. 

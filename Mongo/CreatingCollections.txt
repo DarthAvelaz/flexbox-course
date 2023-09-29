@@ -1,0 +1,9 @@
+# Basic syntax for creating collections in a db using Mongo
+
+db.createCollection('books')
+
+# run above command, system returns "{ "ok" : 1 } for confirmation of success
+
+show collections
+
+#above is a command to show collections on the db. no symbols, no special syntax, just words.
